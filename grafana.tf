@@ -34,7 +34,7 @@ resource "aws_security_group" "grafana" {
 }
 #apacheuserdata
 data "template_file" "grafanauser" {
-  template = file("grafanana.sh")
+  template = file("grafana.sh")
 
 }
 # apache instance
